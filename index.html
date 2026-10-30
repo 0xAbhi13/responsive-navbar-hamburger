@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Navbar with Hamburger Menu</title>
+  <meta name="description" content="A polished, responsive navigation bar with a slide-in hamburger menu, built with HTML5, CSS3, and vanilla JavaScript." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" id="navbar" aria-label="Primary navigation">
+      <div class="navbar__inner container">
+        <a href="#home" class="brand" id="brandLink" aria-label="Veda Technology home">
+          <span class="brand__mark" aria-hidden="true">VT</span>
+          <span class="brand__text">Veda Technology</span>
+        </a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+        >
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+        <ul class="nav-links" id="primaryNav" aria-label="Primary">
+          <li><a href="#home" class="nav-link is-active" aria-current="page">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+    <section class="section hero" id="home" aria-labelledby="heroTitle">
+      <div class="container">
+        <p class="eyebrow">VEDA TECHNOLOGY INTERNSHIP</p>
+        <h1 id="heroTitle" class="hero__title">Responsive Navbar with Hamburger Menu</h1>
+        <p class="hero__subtitle">
+          Day 21 of 45 &mdash; A polished, accessible, mobile-first navigation bar built
+          with HTML5, CSS3, and vanilla JavaScript.
+        </p>
+        <p class="hero__note">
+          Resize the window or open this page on a phone to see the hamburger menu in action.
+        </p>
+        <a class="btn btn--primary" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <h2 id="aboutTitle" class="section__title">About</h2>
+        <p class="section__text">
+          This navigation bar stays sticky at the top, collapses into a slide-in panel on
+          small screens, and keeps keyboard and screen-reader users fully supported.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="services" aria-labelledby="servicesTitle">
+      <div class="container">
+        <h2 id="servicesTitle" class="section__title">Services</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Responsive Layouts</h3>
+            <p>Mobile-first CSS with fluid spacing and breakpoints at 320px and up.</p>
+          </article>
+          <article class="card">
+            <h3>Accessible Components</h3>
+            <p>ARIA states, focus-visible rings, and keyboard-friendly interactions.</p>
+          </article>
+          <article class="card">
+            <h3>Vanilla JavaScript</h3>
+            <p>No frameworks or libraries &mdash; just clean, dependency-free code.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projectsTitle">
+      <div class="container">
+        <h2 id="projectsTitle" class="section__title">Projects</h2>
+        <p class="section__text">
+          Explore the internship tasks built so far, each focused on a single frontend concept.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <h2 id="contactTitle" class="section__title">Contact</h2>
+        <p class="section__text">
+          Reach out to discuss the internship or collaborate on a project.
+        </p>
+        <a class="btn btn--primary" href="mailto:contact.0xabhi13@gmail.com">Email us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      Built by Abhishek Jadhav &middot; Veda Technology Internship &mdash; Day 21/45
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
