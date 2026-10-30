@@ -16,9 +16,6 @@
 
 ---
 
-Responsive Navigation Bar by **Abhishek Jadhav** — Web Developer and first-year BCA student at VIIT, Baramati. Built with **HTML5 + CSS3 + Vanilla JavaScript**: a sticky, accessible navbar that displays horizontally on desktop and transforms into a slide-in hamburger menu on mobile. No frameworks, no build step, no backend.
-
-> **Internship attribution:** 45-day Web Development Internship at **Veda Technology** — Day 21: Responsive Navbar with Hamburger Menu.
 
 ## Features
 
@@ -86,11 +83,6 @@ node --check script.js
 - [x] Layout works at 320px, 375px, 768px, 1024px+.
 - [x] No JavaScript console errors.
 - [x] prefers-reduced-motion respected.
-
-## Limitations
-
-- Single-page anchor navigation only (no router).
-- No backend or form handling beyond anchor links.
 
 ---
 
